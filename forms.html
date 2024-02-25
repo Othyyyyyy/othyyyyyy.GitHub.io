@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Alien Abduction Order Form</h1>
+			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES " method="POST">
+				<input type="hidden" name="send_to" value="othmaneadlaoui.oa@gmail.com">
+				<fieldset>
+					<legend>Your contact information</legend>
+					<label for="name">Your name</label>
+					<input type="text" id="name" name="name" placeholder="enter your full-name">
+					<label for="Phone">Phone number</label>
+					<input type="tel" id="Phone" name="phone" placeholder="Dont forget your erea number">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="enter your email address">
+				</fieldset>
+				<fieldset>
+					<legend>About your abduction </legend>
+					<label>Requested date</label>
+					<input type="date" id="date" name="date">
+					<label>How many people would you like abducted?</label>
+					<input type="number" id="qty" name="qty" min="1" max="10">
+					<p>What type of UFO do you prefer?</p>
+					<label>
+						<input checked type="radio" name="ufotype" value="classic"> oval UFOs
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="starwars">Star Wars-style Imperial cruiser
+					</label>
+					<label>
+						<input type="radio" name="ufotype" value="Galactica"> Galactica-style Viper</label>
+					<label>
+						<input type="radio" name="ufotype" value="Borg"> Borg-style cube</label>
+
+					<label for="abtype">What type of abduction experience do you want?</label>
+					<select id="abtype" name="abtype">
+						<option selected> Select one please...</option>
+						<option value="Tour">Tour of the solar system</option>
+						<option value="dinner">Alien dinner and discussion</option>
+						<option value="dance">Alien dance lessons</option>
+						<option value="Whales">Whale watching</option>
+					</select>
+					<label for="comments">Special requests:</label>
+					<textarea id="comments" name="comments" maxlength="25"
+						placeholder=" Please enter your requests ..."></textarea>
+					<label>
+						<input type="checkbox" value="subscribe" name="subscribe" checked>Add me to your email-list!
+					</label>
+				</fieldset>
+				<button type="submit"> Order your abduction experience </button>
+			</form>
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<iframe style="border-radius:12px"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10592.472631299026!2d7.259954113595253!3d51.45081312582189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9201ee86e545d%3A0x314b9c3f04f18018!2sGropiusweg%2047%2C%2044801%20Bochum%20S%C3%BCd!5e0!3m2!1sen!2sde!4v1708813327540!5m2!1sen!2sde"
+				width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<address>
+				Frontend Masters &middot;
+				60 South 6th Street &middot;
+				Suite 3625 &middot;
+				Minneapolis, MN 55402
+			</address>
+			<h3>Some good music</h3>
+			<iframe style="border-radius:12px" width="400" height="315"
+				src="https://www.youtube.com/embed/DfXUyQsmXRk?si=SKRz63DEm13etPqM" title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe>
+			<iframe style="border-radius:12px"
+				src="https://open.spotify.com/embed/track/0YZ2ANy2Hhf21koqFpph5F?utm_source=generator" width="400"
+				height="352" frameBorder="0" allowfullscreen=""
+				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+				loading="lazy"></iframe>
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+
+</html>

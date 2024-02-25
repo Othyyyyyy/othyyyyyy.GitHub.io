@@ -1,0 +1,107 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/dark-cosmic-jhin-splash-art-lol-4K-87.jpg);
+	background-size: cover;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: #19386D;
+}
+
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+
+aside {
+	flex-basis: 33%;
+}
+
+p,
+[for="abtype"] {
+	margin-bottom: 0;
+	margin-top: 2rem;
+}
+
+fieldset {
+	border: 2px solid white;
+	border-radius: 15px;
+	margin-bottom: 2rem;
+}
+
+legend {
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+label {
+	display: block;
+	padding-bottom: 0.5rem;
+}
+
+h1,
+p,
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+
+select {
+	font-size: 1rem;
+}
+
+button {
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 2rem 0;
+	background-color: #040B27;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+
+button:hover {
+	background-color: #68315B;
+	color: rgb(234, 182, 182);
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+textarea,
+select {
+	display: block;
+	margin-bottom: 1rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border: none;
+}
+address {
+	width="400"
+}
